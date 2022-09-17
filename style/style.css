@@ -1,7 +1,47 @@
 .navbar-custom {
-    background-color: rgba(141, 0, 0, 0.895);
+    background-color: #CC0000;
 }
 
-#test {
-    background-color: red;
+.main-logo-header {
+    height: 50px;
+    display: flex;
+    /* height: 100%; */
+}
+
+.main-logo-header-items {
+    display: flex;
+    align-items: center;
+}
+
+#logo_anchor {
+    text-decoration: none !important;
+}
+
+#team_logos_container {
+    width: 100%;
+    background-color: #ECEFF4;
+    margin: 0;
+}
+
+/* Custom Logos Overflow Scrollbars */
+#team_logos {
+    margin-left: auto;
+    margin-right: auto;
+    margin: 4px, 4px;
+    padding: 4px;
+    max-width: fit-content;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    scrollbar-color: rgba(136, 133, 139, 0.233) rgb(255, 255, 255);
+    scrollbar-width: thin;
+}
+
+#team_logos::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+}
+
+#team_logos::-webkit-scrollbar-thumb {
+    background: rgba(136, 133, 139, 0.233);
 }
