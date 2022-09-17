@@ -2,6 +2,19 @@
     background-color: #CC0000;
 }
 
+.banner {
+    /* padding: 15%; */
+    padding-top: 2%;
+    padding-left: 20%;
+    padding-right: 20%;
+    display: block;
+}
+
+.spacer {
+    width: 100%;
+    height: 20px;
+}
+
 .main-logo-header {
     height: 50px;
     display: flex;
@@ -44,4 +57,20 @@
 
 #team_logos::-webkit-scrollbar-thumb {
     background: rgba(136, 133, 139, 0.233);
+}
+
+#img_miniature {
+    height: 180px;
+    /* display: block; */
+    /* height: 150px; */
+}
+
+#card_background {
+    background: #F5F7FA;
+    max-width: 60%;
+}
+
+#first_container {
+    margin-left: 19.4%;
+    padding-right: 24.5%;
 }
