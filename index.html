@@ -7,35 +7,70 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS v5.2.0-beta1 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./style/style.css">
 
 <body>
     <header>
-        <div class="main-logo-header">
-            <div class="main-logo-header-item">
-                <!-- <a>
-                    <img src="/src/img/cuidateplus.svg" width="50px" height="50px">
-                </a> -->
+        <div class="container">
+            <div class="row bg-ligth" id="started">
+                <div class="col-4 my-2 d-none d-md-block" style="font-size: 10px; font-weight: bold">
+                    <a href="https://cuidateplus.marca.com/" style="text-decoration: none; color: black">
+                        <img src="src/img/cuidateplus.svg" alt="cuidate" style="width: auto; height: 40px" />
+                        <samp>CuídatePlus</samp>
+                    </a>
+                </div>
+                <div class="col-12 text-center col-md-3">
+                    <img src="src/img/marca-logo.png" alt="MARCA" style="height: 50px" class="py-1" />
+                </div>
+                <div class="col col-md-5 text-right d-none d-md-block mt-1 px-0" id="padding-Left">
+                    <div class="btn-group my-lg-2 my-md-0 pt-md-5 pb-md-0 pt-lg-0" role="group">
+                        <div class="dropdown">
+                            <button
+                                class=" btn btn-sm btn-outline-secondary dropdown-toggle d-md-none d-lg-block" " type="
+                                button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <img src="src/img/bandera-MX.png" alt="México" style="height: 20px" class="mx-1" />
+                                MX
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="triggerId">
+                                <a class="dropdown-item" href="#">
+                                    <img src="src/img/bandera-MX.png" alt="México" style="height: 20px" class="mx-1" />
+                                    MX (México)
+                                </a>
+                                <a class="dropdown-item disabled" href="#">Disabled action</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-danger px-3 py-1 mx-1"
+                        style="background-color: rgb(203, 23, 23)">
+                        Suscríbete
+                    </button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary px-2 py-1"
+                        style="border-color: rgb(220, 211, 211); color: rgb(203, 23, 23)">
+                        Iniciar sesión
+                    </button>
+                </div>
             </div>
         </div>
-        <nav class="navbar navbar-expand-sm  navbar-dark navbar-custom">
+        <nav class="navbar sticky-top navbar-expand-sm  navbar-dark navbar-custom">
             <div class="container">
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="futbolid" data-bs-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">futbol</a>
+                            <a class="nav-link dropdown-toggle active" href="#" id="futbolid" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Fútbol</a>
                             <div class="dropdown-menu" aria-labelledby="futbolid">
                                 <a class="dropdown-item" href="#">Action 1</a>
                                 <a class="dropdown-item" href="#">Action 2</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="international_futbol"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">futbol
+                            <a class="nav-link dropdown-toggle active" href="#" id="international_futbol"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Fútbol
                                 internacional</a>
                             <div class="dropdown-menu" aria-labelledby="international_futbol">
                                 <a class="dropdown-item" href="#">Action 1</a>
@@ -43,29 +78,31 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="motor" data-bs-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">motor</a>
+                            <a class="nav-link dropdown-toggle active" href="#" id="motor" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Motor</a>
                             <div class="dropdown-menu" aria-labelledby="motor">
                                 <a class="dropdown-item" href="#">Action 1</a>
                                 <a class="dropdown-item" href="#">Action 2</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="others-sports" data-bs-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">otros deportes</a>
+                            <a class="nav-link dropdown-toggle active" href="#" id="others-sports"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Otros deportes</a>
                             <div class="dropdown-menu" aria-labelledby="others-sports">
                                 <a class="dropdown-item" href="#">Action 1</a>
                                 <a class="dropdown-item" href="#">Action 2</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#" aria-current="page">Mas +<span
+                            <a class="nav-link active" href="#" aria-current="page">Más +<span
                                     class="visually-hidden">(current)</span></a>
                         </li>
                     </ul>
                     <form class="d-flex my-2 my-lg-0">
-                        <input class="form-control me-sm-2" type="text" placeholder="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        <input class="form-control me-sm-2" type="search" placeholder="Buscar en marca.com">
+                        <!-- <div class="search-btn">
+                            <i class="bi-search"></i>
+                        </div> -->
                     </form>
                 </div>
             </div>
@@ -135,10 +172,14 @@
         <div class="container-fluid" id="first_container">
             <div class="row">
                 <div class="col">
-                    <picture>
-                        <source srcset="sourceset" type="image/webp+xml">
-                        <img src="src/img/futbol_1.webp" class="img-fluid" alt="...">
-                    </picture>
+                    <div class="card text-white">
+                        <img src="src/img/futbol_1.webp" class="img-fluid" alt="image desc">
+                        <div class="card-body">
+                            <h6 class="card-title" id="red-text">Chivas 1-0 América</h6>
+                            <h3 class="card-title" style="color: black">Chicarito regresa a chivas marcando el gol
+                                ganador</h3>
+                        </div>
+                    </div>
                 </div>
                 <div class="col">
                     <div class="card mb-3" id="card_background">
@@ -183,6 +224,40 @@
                             <div class="col-md-6">
                                 <img src="src/img/miniatura_1.webp" class="img-fluid rounded-start" alt="..."
                                     id="img_miniature">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card text-white">
+                            <img class="card-img-top" src="holder.js/100px180/" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text">Text</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-white">
+                            <img class="card-img-top" src="src/img/futbol_1.webp" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text">Text</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-white">
+                            <img class="card-img-top" src="holder.js/100px180/" alt="Title">
+                            <div class="card-body">
+                                <h4 class="card-title">Title</h4>
+                                <p class="card-text">Text</p>
                             </div>
                         </div>
                     </div>
